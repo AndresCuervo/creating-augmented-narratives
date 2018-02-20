@@ -102,7 +102,7 @@ AFRAME.registerComponent('refraction-material', {
      */
     applyToMesh: function() {
         const mesh = this.el.getObject3D('mesh') || this.el.components['refraction-noodle-doodle'].mesh
-        console.log("====> ", mesh)
+        // console.log("====> ", mesh)
         if (mesh) {
             var mat = this.material
             mesh.traverse(function (node) {
